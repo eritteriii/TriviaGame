@@ -1,6 +1,6 @@
 //Global Variables
 
-var timeLeft = 10;
+var timeLeft = 60;
 var intervalId
 var a = 0;
 var b = 0;
@@ -13,12 +13,14 @@ var score = 0;
 function start() {
     clearInterval(intervalId);
     intervalId = setInterval(decrement, 1000)
+    $('#timer').html("Find out how much I hate you in t-minus: " + timeLeft)
     
 }
 
 function decrement() {
     timeLeft --;
-    console.log(timeLeft)
+    //console.log(timeLeft)
+    $('#timer').html("Find out how much I hate you in t-minus: " + timeLeft)
 
     if (timeLeft === 0) {
         timeUp();
@@ -35,11 +37,18 @@ function timeUp() {
     if (score > 14 && score < 31) {
         $('#scorecard').html("Wow, you're.. weirdly a good person? It's kind of creepy, honestly")
     }
-    else if (score > 30 && score < 46) {
+
+    else if (score < 15) {
+        $('#scorecard').html("You didn't even finish? How? Can you not read?")
+    }
+
+    else if (score > 30 && score < 50) {
         $('#scorecard').html("You're not the brightest, maybe a little too prone to following bad advice. Grow a spine.")
     }
-    else if (score > 45 && score < 61) {
+
+    else if (score > 49) {
         $('#scorecard').html("You are without a doubt the worst person I have ever heard of.")
+    }
 
 }
 
@@ -68,9 +77,10 @@ $('.d').on("click", function() {
     
 })
 
-if (score > 15 && score < 30) {
-    $('#scorecard').html("You are a gentleman and a scholar, I deem thee worthy.")
-}
+$('#subBtn').on("click", function() {
+    timeUp();
+})
+
 
 
 

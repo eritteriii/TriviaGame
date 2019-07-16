@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Let Me Judge You</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,7 +16,8 @@
     <div class="container">
         <h1 class="text-center id=main">I'll Be the Judge of You</h1>
         <h2 class="text-center">a shitty personality test</h2>
-        <h1 class="text-center" id="scorecard"></h1>
+        <br>
+        <div class="sticky-top text-center" id="timer"></div>
         <br>
         <br>
         <div class="row">
@@ -24,62 +25,54 @@
                 <div class="h4 text-center">Who is your favorite Lannister?</div>
                 <br>
                 <div class="form-check a">
-                    <input class="form-check-input" type="radio" name="qOne" id="exampleRadios1"
-                        value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
+                    <input class="form-check-input" type="radio" name="qOne" id="qOneA" value="option1">
+                    <label class="form-check-label" for="qOneA">
                         Tyrion
                     </label>
                 </div>
                 <div class="form-check b">
-                    <input class="form-check-input" type="radio" name="qOne" id="exampleRadios2"
-                        value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
+                    <input class="form-check-input" type="radio" name="qOne" id="qOneB" value="option2">
+                    <label class="form-check-label" for="qOneB">
                         Jaime
                     </label>
                 </div>
                 <div class="form-check c">
-                    <input class="form-check-input" type="radio" name="qOne" id="exampleRadios3"
-                        value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
+                    <input class="form-check-input" type="radio" name="qOne" id="qOneC" value="option3">
+                    <label class="form-check-label" for="qOneC">
                         Tywin
                     </label>
                 </div>
                 <div class="form-check d">
-                    <input class="form-check-input" type="radio" name="qOne" id="exampleRadios4"
-                        value="option4">
-                    <label class="form-check-label" for="exampleRadios4">
+                    <input class="form-check-input" type="radio" name="qOne" id="qOneD" value="option4">
+                    <label class="form-check-label" for="qOneD">
                         Cersei
                     </label>
                 </div>
             </div>
             <div class="col">
-                    <div class="h4 text-center">Who is your favorite Stark?</div>
-                    <br>
-                    
+                <div class="h4 text-center">Who is your favorite Stark?</div>
+                <br>
+
                 <div class="form-check a">
-                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoA"
-                        value="option1">
+                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoA" value="option1">
                     <label class="form-check-label" for="qTwoA">
                         Arya
                     </label>
                 </div>
                 <div class="form-check b">
-                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoB"
-                        value="option2">
+                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoB" value="option2">
                     <label class="form-check-label" for="qTwoB">
                         Rob
                     </label>
                 </div>
                 <div class="form-check c">
-                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoC"
-                        value="option3">
+                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoC" value="option3">
                     <label class="form-check-label" for="qTwoC">
                         Bran
                     </label>
                 </div>
                 <div class="form-check d">
-                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoD"
-                        value="option4">
+                    <input class="form-check-input" type="radio" name="qTwo" id="qTwoD" value="option4">
                     <label class="form-check-label" for="qTwoD">
                         Sansa
                     </label>
@@ -87,84 +80,420 @@
 
             </div>
             <div class="col">
-                    <div class="h4 text-center">Tequila Preference?</div>
-                    <br>
-                    
-                    <div class="form-check a">
-                            <input class="form-check-input" type="radio" name="qThree" id="qThreeA"
-                                value="option1">
-                            <label class="form-check-label" for="qThreeA">
-                                Anejo
-                            </label>
-                        </div>
-                        <div class="form-check b">
-                            <input class="form-check-input" type="radio" name="qThree" id="qThreeb"
-                                value="option2">
-                            <label class="form-check-label" for="qThreeb">
-                                Reposado
-                            </label>
-                        </div>
-                        <div class="form-check c">
-                            <input class="form-check-input" type="radio" name="qThree" id="qThreeC"
-                                value="option3">
-                            <label class="form-check-label" for="qThreeC">
-                                Blanco
-                            </label>
-                        </div>
-                        <div class="form-check d">
-                            <input class="form-check-input" type="radio" name="qThree" id="qThreeD"
-                                value="option4">
-                            <label class="form-check-label" for="qThreeD">
-                                Tequila makes my tummy hurt.
-                            </label>
-                        </div>
+                <div class="h4 text-center">Tequila Preference?</div>
+                <br>
 
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qThree" id="qThreeA" value="option1">
+                    <label class="form-check-label" for="qThreeA">
+                        Anejo
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qThree" id="qThreeB" value="option2">
+                    <label class="form-check-label" for="qThreeB">
+                        Reposado
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qThree" id="qThreeC" value="option3">
+                    <label class="form-check-label" for="qThreeC">
+                        Blanco
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qThree" id="qThreeD" value="option4">
+                    <label class="form-check-label" for="qThreeD">
+                        Tequila makes my tummy hurt.
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="h4 text-center">Top Gun?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qFour" id="qFourA" value="option1">
+                    <label class="form-check-label" for="qFourA">
+                        1: DANGER ZONE
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qFour" id="qFourB" value="option2">
+                    <label class="form-check-label" for="qFourB">
+                        2: I still cry when Goose dies.
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qFour" id="qFourC" value="option3">
+                    <label class="form-check-label" for="qFourC">
+                        3: Wait, Goose dies?
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qFour" id="qFourD" value="option4">
+                    <label class="form-check-label" for="qFourD">
+                        4: Seemed kind of gay to me.
+                    </label>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="h4 text-center">Your Hogwarts House</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qFive" id="qFiveA" value="option1">
+                    <label class="form-check-label" for="qFiveA">
+                        Not sure I cared enough to find out.
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qFive" id="qFiveb" value="option2">
+                    <label class="form-check-label" for="qFiveB">
+                        Gryffindor
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qFive" id="qFiveC" value="option3">
+                    <label class="form-check-label" for="qFiveC">
+                        Slytherin
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qFive" id="qFiveD" value="option4">
+                    <label class="form-check-label" for="qFiveD">
+                        One of the other two.
+                    </label>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="h4 text-center">Favorite Todd Phillips Film?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qSix" id="qSixA" value="option1">
+                    <label class="form-check-label" for="qSixA">
+                        Old School
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qSix" id="qSixBSeven" value="option2">
+                    <label class="form-check-label" for="qSixB">
+                        The Hangover
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qSix" id="qSixC" value="option3">
+                    <label class="form-check-label" for="qSixC">
+                        Due Date
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qSix" id="qSixD" value="option4">
+                    <label class="form-check-label" for="qSixD">
+                        The Hangover: Part III
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="h4 text-center">Do you wanna go do karate in the garage?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qSeven" id="qSeven" value="option1">
+                    <label class="form-check-label" for="qSeven">
+                        Yup.
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qSeven" id="qSevenB" value="option2">
+                    <label class="form-check-label" for="qSevenB">
+                        Yes, please.
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qSeven" id="qSevenCSeven" value="option3">
+                    <label class="form-check-label" for="qSevenC">
+                        Not right now.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qSeven" id="qSevenD" value="option4">
+                    <label class="form-check-label" for="qSevenD">
+                        That would be cultural appropriation.
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h4 text-center">What is your favorite QUEEN song?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qEight" id="qEightA" value="option1">
+                    <label class="form-check-label" for="qEightA">
+                        Somebody to Love
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qEight" id="qEightB" value="option2">
+                    <label class="form-check-label" for="qEightB">
+                        Don't Stop Me Now
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qEight" id="qEightC" value="option3">
+                    <label class="form-check-label" for="qEightC">
+                        One of their other songs.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qEight" id="qEightD" value="option4">
+                    <label class="form-check-label" for="qEightD">
+                        Didn't they steal from Vanilla Ice?
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h4 text-center">What does "Natural 20" mean to you?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qNine" id="qNineA" value="option1">
+                    <label class="form-check-label" for="qNineA">
+                        "NAT TWENTY!"
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qNine" id="qThreeB" value="option2">
+                    <label class="form-check-label" for="qNineB">
+                        It depends, do I have disadvantage?
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qNine" id="qNineC" value="option3">
+                    <label class="form-check-label" for="qNineC">
+                        I'm not sure.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qNine" id="qNineD" value="option4">
+                    <label class="form-check-label" for="qNineD">
+                        That's a product I offer through Herbalife. Interested?
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <div class="h4 text-center">Your Taco Bell drink order?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qTen" id="qTenA" value="option1">
+                    <label class="form-check-label" for="qTenA">
+                        Baja Blast
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qTen" id="qTenB" value="option2">
+                    <label class="form-check-label" for="qTenBEleven">
+                        Baja Blast Freeze
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qTen" id="qTenC" value="option3">
+                    <label class="form-check-label" for="qTenC">
+                        I don't eat fast food.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qTen" id="qTenD" value="option4">
+                    <label class="form-check-label" for="qTenD">
+                        Something not Baja Blast flavored
+                    </label>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="h4 text-center">Dogs or Cats?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qEleven" id="qElevenA" value="option1">
+                    <label class="form-check-label" for="qElevenA">
+                        Why can't we have both?
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qEleven" id="qElevenB" value="option2">
+                    <label class="form-check-label" for="qElevenB">
+                        Dogs
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qEleven" id="qElevenC" value="option3">
+                    <label class="form-check-label" for="qElevenC">
+                        I lean cats.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qEleven" id="qElevenD" value="option4">
+                    <label class="form-check-label" for="qElevenD">
+                        I'm allergic to animals.
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="h4 text-center">Which is the best Star Wars film?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qTwelve" id="qTwelveA" value="option1">
+                    <label class="form-check-label" for="qTwelveA">
+                        The Empire Strikes Back
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qTwelve" id="qTwelveB" value="option2">
+                    <label class="form-check-label" for="qTwelveB">
+                        A New Hope
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qTwelve" id="qTwelveC" value="option3">
+                    <label class="form-check-label" for="qTwelveC">
+                        Return of the Jedi
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qTwelve" id="qTwelveD" value="option4">
+                    <label class="form-check-label" for="qTwelveD">
+                        The Last Jedi
+                    </label>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
+                <div class="h4 text-center">Is a hotdog a sandwich?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qThirteen" id="qThirteenA" value="option1">
+                    <label class="form-check-label" for="qThirteenA">
+                        Definitely not a sandwich.
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qThirteen" id="qThirteenB" value="option2">
+                    <label class="form-check-label" for="qThirteenB">
+                        Probably not a sandwich.
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qThirteen" id="qThirteenC" value="option3">
+                    <label class="form-check-label" for="qThirteenC">
+                        Sandwiches are peasant food.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qThirteen" id="qThirteenD" value="option4">
+                    <label class="form-check-label" for="qThirteenD">
+                        100% is a sandwich.
+                    </label>
+                </div>
 
             </div>
             <div class="col">
+                <div class="h4 text-center">"X gon' _______?"</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qFourteen" id="qFourteenA" value="option1">
+                    <label class="form-check-label" for="qFourteenA">
+                        Give it to ya.
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qFourteen" id="qFourteenB" value="option2">
+                    <label class="form-check-label" for="qFourteenB">
+                        Deliva to ya.
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qFourteen" id="qFourteenC" value="option3">
+                    <label class="form-check-label" for="qFourteenC">
+                        Not enough information.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qFourteen" id="qFourteenD" value="option4">
+                    <label class="form-check-label" for="qFourteenD">
+                        I don't understand the reference?
+                    </label>
+                </div>
 
             </div>
+            <br>
             <div class="col">
+                <div class="h4 text-center">Best pizza topping?</div>
+                <br>
+
+                <div class="form-check a">
+                    <input class="form-check-input" type="radio" name="qFifteen" id="qFifteenA" value="option1">
+                    <label class="form-check-label" for="qFifteenA">
+                        Pepperoni
+                    </label>
+                </div>
+                <div class="form-check b">
+                    <input class="form-check-input" type="radio" name="qFifteen" id="qFifteenB" value="option2">
+                    <label class="form-check-label" for="qFifteenB">
+                        Olives
+                    </label>
+                </div>
+                <div class="form-check c">
+                    <input class="form-check-input" type="radio" name="qFifteen" id="qFifteenC" value="option3">
+                    <label class="form-check-label" for="qFifteenC">
+                        Cheese, only.
+                    </label>
+                </div>
+                <div class="form-check d">
+                    <input class="form-check-input" type="radio" name="qFifteen" id="qFifteenD" value="option4">
+                    <label class="form-check-label" for="qFifteenD">
+                        Pineapple
+                    </label>
+                </div>
 
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" id="subBtn">Submit</button>
+            </div>
+        </div>
+        <br>
         <div class="row">
             <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
+                <h1 class="text-center" id="scorecard"></h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
 
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-        </div>
 
     </div>
 
